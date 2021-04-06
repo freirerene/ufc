@@ -13,8 +13,7 @@ for l in ab:
     soup.append(BeautifulSoup(markup, 'html.parser'))
     
 df = pd.DataFrame(columns=['first_name', 'last_name', 'nickname', 'height', 'weight',
-       'reach', 'stance', 'win', 'loss', 'draw', 'belt', 'SLpM', 'StrAcc',
-       'SApM', 'StrDef', 'nan', 'TD Avg', 'TD Acc', 'TD Def.', 'Sub. Avg.'])
+       'reach', 'stance', 'win', 'loss', 'draw', 'belt', 'SLpM', 'Str. Acc.', 'SApM', 'Str. Def', 'nan', 'TD Avg.', 'TD Acc.', 'TD Def.', 'Sub. Avg.'])
 
 for s in soup:
     rows = s.find_all("tr", {"class": "b-statistics__table-row"})
